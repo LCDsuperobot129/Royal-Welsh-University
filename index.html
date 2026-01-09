@@ -3,14 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My List</title>
+    <title>Royal University of Wales</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <body>
+    <header class="header-modern">
+    <div class="container">
+        <a href="#" class="logo" style="font-size: 1.75rem;">Royal Welsh University</a>
+        <div class="nav-wrapper">
+        <nav>
+            <ul class="nav-links">
+            <li><a href="#">Apply</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Athletics</a></li>
+            <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <ul>
+        <li><a href="#">Apply</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Athletics</a></li>
+        <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <style>
+    .parallax {
+        /* The image used */
+        background-image: url("trinitysaintdavidenhanced.jpeg");
+
+        /* Set a specific height */
+        min-height: 1200px;
+
+        width: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        filter: brightness(40%);
+
+        z-index: -1;
+    }
+    </style>
+
+    <!-- Container element -->
+    <div class="parallax"></div>
     
+    <div class="mainPage_group">
+        <div class="rectangleLocation">
+            <h6 class="locationText">
+                Cardiff, Wales, United Kingdom
+            </h6>
+        </div>
+
+        <img class="mainPage_logo" src="lighterlogotransparentbg.png" alt="Royal Welsh University Logo" width="370px">
+
+        <p class="mainDescription">
+            Applications close in 10 days!
+        </p>
+
+        <button class="shrink-btn">
+            Apply Now
+        </button>
+    </div>
+
+    <div class="generalInfo_section">
+        <h1 style="font-size: 4.5rem; font-family: 'Crimson Text', serif; font-weight: 500; color: rgb(194, 0, 0)">
+            General Info
+        </h1>
+    </div>
 </body>
 </html>
